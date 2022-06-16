@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>catBackground</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .cat,
+        .cat2,
+        .cat3 {
+            width: 100%;
+            height: 100vh;
+            opacity: 0.7;
+            background-size: cover;
+            /* 使圖片占滿整個畫面,且圖片不會變形 */
+            /* background-size: contain; */
+            /* 使圖片等比例縮放 ,且圖片不會變形*/
+            background-position: center;
+            background-repeat: no-repeat;
+            /* 使圖片不要重複 */
+            background-attachment: fixed;
+            position: relative;
+            font-family: 'DM Serif Display', serif;
+        }
+
+        .cat {
+            background-image: url("image/uni.jpg");
+        }
+
+        .cat2 {
+            height: 60vh;
+            background-image: url("image/mochi.jpg");
+            opacity: 0.78;
+
+        }
+
+        .cat3 {
+            height: 60vh;
+            background-image: url("image/uni2.jpg");
+
+        }
+
+        .font,
+        .font2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            padding: 3px 15px;
+            color: rgb(255, 254, 249);
+            letter-spacing: 5px;
+        }
+
+        .font {
+            background-color: rgba(5, 5, 5, 0.308);
+                opacity: 0.9;
+        }
+
+
+        .word,
+        .word2,
+        .cont {
+            padding: 50px 80px;
+            text-align: justify;
+            font-size: 20px;
+            letter-spacing: 3px
+        }
+
+        .word {
+            background-color: rgb(247, 241, 233);
+        }
+        .word2 {
+            background-color: rgb(19, 19, 18);
+            color: rgb(216, 216, 213);
+            opacity: 0.9;
+        }
+        .cont {
+            color: rgb(61, 62, 63);
+        }
+        .title {
+            text-align: center;
+            font-size: 30px;
+            word-spacing: 10px;
+            letter-spacing: 3px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="cat">
+        <div class="font">SCROLL DOWN</div>
+    </div>
+    <div class="word">
+        <div class="title">#關於貓可能讓你很意外的point</div>
+        <p class="cont">1.貓鼻上的紋路相當於人類的指紋,沒有一隻貓的鼻紋是重複的。<br>
+            2.研究發現，相較於人類、狗、鼠、猿猴等,皆偏好從勞力換取報酬所得到的高成就感, 貓是目前唯一會享受不勞而獲的哺乳類動物。<br>
+            3.貓掌是貓少數會出汗的地方。<br>
+            4.貓僅靠腳趾走路,且貓的重心在前半身,光是前腳就支撐了60%的體重。<br>
+            5.貓是所有肉食動物當中眼睛占了全身比例最大的,相較於狗,貓擁有大眼睛卻沒有「睫毛」這種東西。另外,貓咪不需要靠眨眼這個動作來保持眼睛濕潤。<br>
+            6.家貓是唯一能邊行走邊夾住尾巴的貓科動物。另外,貓尾巴是貓表達情緒跟平衡用的工具,但有少部分貓咪如曼島貓及日本短尾貓是天生沒有尾巴的。<br>
+            7.貓科動物每天舔舐自己所費的口水量跟尿量相同。貓一生當中花了1/3的時間在清理自己的皮毛。<br>
+            8.研究顯示,時常在網路上看貓影片對身心有益,唯一缺點是會浪費更多時間在網路上。<br>
+            9.有別於金鋼狼,貓從來不用爪子殺死獵物。貓爪僅是用來固定獵物用的,而獵物通常都是被貓咬死的。<br>
+            10.一樣是研究顯示,貓聽得懂自己的名字,你叫牠沒反應,單純只是不想理你而已。</p>
+    </div>
+    <div class="cat2">
+        <div class="font2">This IS A Brown Sugar Peanut Mochi</div>
+    </div>
+    <div class="word2">Scroll up and down to really get the feeling of how my cat looks like a mochi.</div>
+    <div class="cat3">
+        <div class="font2">This Is My Cat</div>
+    </div>
+    <div class="word2">Scroll up and down to really get the feeling of how my cat looks like a mochi.</div>
+    <div class="cat">
+        <div class="font">SO CUTE!</div>
+    </div>
+
+</body>
+
+</html>
