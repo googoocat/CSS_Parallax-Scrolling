@@ -11,12 +11,14 @@
     <style>
         * {
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
             margin: 0;
             padding: 0;
             font-family: 'Noto Sans JP', sans-serif;
+
         }
 
         .cat,
@@ -29,28 +31,52 @@
             /* 使圖片占滿整個畫面,且圖片不會變形 */
             /* background-size: contain; */
             /* 使圖片等比例縮放 ,且圖片不會變形*/
-            background-position: center;
+            background-position: top;
             background-repeat: no-repeat;
             /* 使圖片不要重複 */
             background-attachment: fixed;
             position: relative;
-            font-family: 'DM Serif Display', serif;
+        }
+
+        .nav {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(5, 5, 5, 0.308);
+            position: fixed;
+            z-index: 1;
+        }
+
+        .nav .link {
+            text-align: right ;
+    
+        }
+
+        .nav a {
+            font-size: 20px;
+            font-weight: bolder;
+            color: antiquewhite;
+            text-decoration: none;
+            letter-spacing: 1pX;
+            line-height: 50px;
+            margin-right: 10px;
         }
 
         .cat {
-            background-image: url("https://i.imgur.com/Xg3ZvyD.jpg");
+            background-image: url("image/uni.jpg");
         }
 
         .cat2 {
             height: 60vh;
-            background-image: url("https://i.imgur.com/HKXbyOS.jpg");
+            background-image: url("image/mochi.jpg");
             opacity: 0.78;
+            background-position: bottom;
 
         }
 
         .cat3 {
             height: 60vh;
-            background-image: url("https://i.imgur.com/lmHli3Z.jpg");
+            background-image: url("image/uni2.jpg");
+            background-position: bottom;
 
         }
 
@@ -68,7 +94,7 @@
 
         .font {
             background-color: rgba(5, 5, 5, 0.308);
-                opacity: 0.9;
+            opacity: 0.9;
         }
 
 
@@ -78,23 +104,28 @@
             padding: 50px 80px;
             text-align: justify;
             font-size: 20px;
+            margin: 0;
             letter-spacing: 3px
         }
 
         .word {
             background-color: rgb(247, 241, 233);
         }
+
         .word2 {
             background-color: rgb(19, 19, 18);
             color: rgb(216, 216, 213);
             opacity: 0.9;
         }
+
         .cont {
             color: rgb(61, 62, 63);
         }
+
         .title {
             text-align: center;
             font-size: 30px;
+            font-weight: bolder;
             word-spacing: 10px;
             letter-spacing: 3px;
 
@@ -104,7 +135,14 @@
 </head>
 
 <body>
-    <div class="cat">
+    <div class="nav">
+        <div class="link">
+            <a href="#top">TOP</a>
+            <a href="#mid">MID</a>
+            <a href="#botm">BOTTOM</a>
+        </div>
+    </div>
+    <div class="cat" id="top">
         <div class="font">SCROLL DOWN</div>
     </div>
     <div class="word">
@@ -120,7 +158,7 @@
             9.有別於金鋼狼,貓從來不用爪子殺死獵物。貓爪僅是用來固定獵物用的,而獵物通常都是被貓咬死的。<br>
             10.一樣是研究顯示,貓聽得懂自己的名字,你叫牠沒反應,單純只是不想理你而已。</p>
     </div>
-    <div class="cat2">
+    <div class="cat2" id="mid">
         <div class="font2">This IS A Brown Sugar Peanut Mochi</div>
     </div>
     <div class="word2">Scroll up and down to really get the feeling of how my cat looks like a mochi.</div>
@@ -128,7 +166,7 @@
         <div class="font2">This Is My Cat</div>
     </div>
     <div class="word2">Scroll up and down to really get the feeling of how my cat looks like a mochi.</div>
-    <div class="cat">
+    <div class="cat" id="botm">
         <div class="font">SO CUTE!</div>
     </div>
 
