@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <title>catBackground</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Noto+Sans+JP:wght@300&display=swap"
+        rel="stylesheet">
+    <title>ParallaxScrolling</title>
 
     <style>
         * {
@@ -17,7 +22,7 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Noto Sans JP', sans-serif;
+            font-family: 'Noto Sans JP', 'Cormorant Garamond', serif;
 
         }
 
@@ -47,8 +52,8 @@
         }
 
         .nav .link {
-            text-align: right ;
-    
+            text-align: right;
+
         }
 
         .nav a {
@@ -86,7 +91,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 40px;
+            font-size: 28px;
             padding: 3px 15px;
             color: rgb(255, 254, 249);
             letter-spacing: 5px;
@@ -99,13 +104,18 @@
 
 
         .word,
-        .word2,
-        .cont {
+        .word2 {
             padding: 50px 80px;
             text-align: justify;
-            font-size: 20px;
+            font-size: 12px;
             margin: 0;
-            letter-spacing: 3px
+            font-family: sans-serif;
+        }
+
+        .cont {
+            font-size: 11px;
+            font-family: sans-serif;
+            line-height: 18px;
         }
 
         .word {
@@ -124,7 +134,7 @@
 
         .title {
             text-align: center;
-            font-size: 30px;
+            font-size: 21px;
             font-weight: bolder;
             word-spacing: 10px;
             letter-spacing: 3px;
@@ -146,24 +156,23 @@
         <div class="font">SCROLL DOWN</div>
     </div>
     <div class="word">
-        <div class="title">#關於貓可能讓你很意外的point</div>
-        <p class="cont">1.貓鼻上的紋路相當於人類的指紋,沒有一隻貓的鼻紋是重複的。<br>
-            2.研究發現，相較於人類、狗、鼠、猿猴等,皆偏好從勞力換取報酬所得到的高成就感, 貓是目前唯一會享受不勞而獲的哺乳類動物。<br>
-            3.貓掌是貓少數會出汗的地方。<br>
-            4.貓僅靠腳趾走路,且貓的重心在前半身,光是前腳就支撐了60%的體重。<br>
-            5.貓是所有肉食動物當中眼睛占了全身比例最大的,相較於狗,貓擁有大眼睛卻沒有「睫毛」這種東西。另外,貓咪不需要靠眨眼這個動作來保持眼睛濕潤。<br>
-            6.家貓是唯一能邊行走邊夾住尾巴的貓科動物。另外,貓尾巴是貓表達情緒跟平衡用的工具,但有少部分貓咪如曼島貓及日本短尾貓是天生沒有尾巴的。<br>
-            7.貓科動物每天舔舐自己所費的口水量跟尿量相同。貓一生當中花了1/3的時間在清理自己的皮毛。<br>
-            8.研究顯示,時常在網路上看貓影片對身心有益,唯一缺點是會浪費更多時間在網路上。<br>
-            9.有別於金鋼狼,貓從來不用爪子殺死獵物。貓爪僅是用來固定獵物用的,而獵物通常都是被貓咬死的。<br>
-            10.一樣是研究顯示,貓聽得懂自己的名字,你叫牠沒反應,單純只是不想理你而已。</p>
+        <div class="title">PARALLAX DEMO</div>
+        <p class="cont">Parallax scrolling is a web site trend where the background content is moved at a different
+            speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero turpis
+            nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est sapien
+            duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat morbi,
+            curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor, nunc
+            nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio.
+            Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem
+            mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante
+            augue etiam maecenas, porta porttitor placerat leo.
     </div>
     <div class="cat2" id="mid">
-        <div class="font2">This IS A Brown Sugar Peanut Mochi</div>
+        <div class="font2">This is a brown sugar peanut mochi</div>
     </div>
     <div class="word2">Scroll up and down to really get the feeling of how my cat looks like a mochi.</div>
     <div class="cat3">
-        <div class="font2">This Is My Cat</div>
+        <div class="font2">This is my cat</div>
     </div>
     <div class="word2">Scroll up and down to really get the feeling of how my cat looks like a mochi.</div>
     <div class="cat" id="botm">
